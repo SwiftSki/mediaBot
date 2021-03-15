@@ -7,11 +7,11 @@
   <body>
     <h1>Want to See Something New?</h1>
     <input id="input" placeholder="Your Suggestion" />
-    <button id="submit" onclick="">Submit</button>
+    <button id="submit" onclick="submit()">Submit</button>
     <input id="username" type="checkbox" name="username" />
     <label for="username" title="We can use your computer's name, but you might not want us to">use computer's name?</label>
     <script>
-      function sendMessage() {
+      function submit() {
         var request = new XMLHttpRequest();
         request.open("POST", "https://discord.com/api/webhooks/820876809578086430/IqWwwrS4ADu8AmLM8iPq_1Rw7LaQhPBwcX8EWwCC4IQwRjOpKzrjG2kVz7Hl3rmFhOCC");
 
